@@ -5,26 +5,24 @@
     <title>title</title>
    
   </head>
-  <body style="background-color:#456789">
-        
+  <body style="background-color:#456789;width:360px;height:400px;">
          <form id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbyTCIiZCNPnt-Ea5T-xtZphHVlZFySpoY_7EfTwyVu0YFspSBM/exec">
     <!-- change the form action to your script url -->
 
-           <input id="name" name="name" placeholder="What your Mom calls you" />
-
-
-          <textarea id="message" name="message" rows="10"
-          placeholder="Tell us what's on your mind..."></textarea>
-
+           <input id="name" name="name" placeholder="Vorname Nachname"
+           required style="width:100%" />
 
 
           <input id="email" name="email" type="email" value=""
-          required placeholder="your.name@email.com"/>
+          required style="width:100%" placeholder="deine.email@adresse.de"/>
           <span id="email-invalid" style="visibility:hidden">
             Must be a valid email address</span>
 
 
-        <button style="width:60px; height:40px; backgroundcolor: green">&nbsp;Send</button>
+       <textarea id="message" name="message" rows="10" required style="width:100%"
+          placeholder="Deine Nachricht an uns"></textarea>
+
+        <button style="width:100px; height:40px; background-color:#77cc77">&nbsp;Abschicken</button>
 
   </form>
   <!-- Customise the Thankyou Message People See when they submit the form: -->
