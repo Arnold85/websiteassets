@@ -3,7 +3,7 @@ html{
     max-width: 500px;
 }
 body{
-    width: 98%;
+    width: 100%;
     background-color:#aaaaaa; 
     padding:0; 
     margin:10px auto;
@@ -12,12 +12,12 @@ body{
     font-size:1.2em
 }
 input{
-    width:100%;
+    width:98%;
     font-size:1em
     
 }
 textarea{
- width:100%; 
+ width:98%; 
     font-size:1.2em   
 }
 
