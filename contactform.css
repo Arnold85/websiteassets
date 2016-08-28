@@ -3,10 +3,10 @@ html{
     max-width: 500px;
 }
 body{
-    width: 100%;
+    width: 98%;
     background-color:#aaaaaa; 
     padding:0; 
-    margin:10px 0px;
+    margin:10px auto;
     
     font-family:Helvetica, Arial, sans-serif; 
     font-size:1.2em
