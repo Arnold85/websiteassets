@@ -3,33 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>title</title>
-   
+    <link rel="stylesheet" type="text/css" href="contactform.css">
   </head>
-  <body style="background-color:#aaaaaa;width:360px; padding:0; margin:10px; font-family:Helvetica, Arial, sans-serif; font-size:1.2em">
+  <body>
          <form id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbyTCIiZCNPnt-Ea5T-xtZphHVlZFySpoY_7EfTwyVu0YFspSBM/exec">
     <!-- change the form action to your script url -->
 
            <input id="name" name="name" placeholder="Vorname Nachname"
-           required style="width:100%;font-size:1.1em" />
+           required />
 
 
           <input id="email" name="email" type="email" value=""
-          required style="width:100%;font-size:1em" placeholder="deine.email@adresse.de"/>
+          required placeholder="deine.email@adresse.de"/>
           <span id="email-invalid" style="visibility:hidden">
             Must be a valid email address</span>
 
 
-       <textarea id="message" name="message" rows="10" required style="width:100%; font-size:1.2em"
-          placeholder="Deine Nachricht an uns"></textarea>
+       <textarea id="message" name="message" rows="10" required placeholder="Deine Nachricht an uns"></textarea>
 
-        <button style="min-width:100px; min-height:40px; background-color:#49b300; border-radius: 6px; border-style:groove; border-color:white; border-width: 4px; color:white; font-family:'Trebuchet MS', Helvetica, sans-serif; font-size: 1.2em; font-weight:bold;margin:4px auto; display:block">&nbsp;Abschicken</button>
+        <button>&nbsp;Abschicken</button>
 
   </form>
   <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message">
+  <div id="thankyou_message">
       <strong>Danke für Deine Nachricht<br/> und Dein Interesse</strong><br/>
       Wir melden uns bald zurück.<br/><br/>
-      <span style="color:white">Hast Du schonmal in unserer <a href="https://heilpraktiker-physiotherapie.github.io/aktuelles/" target="_top">Rubrik "Aktuelles"</a> vorbeigeschaut?<br/>
+      <span>Hast Du schonmal in unserer <a href="https://heilpraktiker-physiotherapie.github.io/aktuelles/" target="_top">Rubrik "Aktuelles"</a> vorbeigeschaut?<br/>
       Hier findest Du spannende Beiträge rund um den Heilpraktiker für Physiotherapie und die Physiotherapie allgemein.</span>
   </div>
 
