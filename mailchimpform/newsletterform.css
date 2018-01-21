@@ -12,17 +12,17 @@ body{
     font-family:Helvetica, Arial, sans-serif; 
     font-size:1.2em
 }
-input{
+#mce-EMAIL{
     width:98%;
     font-size:1em
     
 }
-textarea{
- width:98%; 
-    font-size:1.2em   
-}
 
-button{
+#mc_embed_signup{
+
+}
+#mc-embedded-subscribe{
+    width: 100%;
     min-width:100px; 
     min-height:40px; 
     background-color:#49b300; 
@@ -36,12 +36,4 @@ button{
     font-weight:bold;
     margin:4px auto; 
     display:block;
-}
-
-#thankyou_message{
-    display: none;
-}
-
-#thankyou_message span{
-    color: white;
 }
