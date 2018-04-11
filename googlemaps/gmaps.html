@@ -1,55 +1,57 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      #map {
-        background-color: grey;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-        function initMap() {
-          var home = {lat: 51.219367, lng: 6.810514};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 5.9,
-            center: {lat: 50.4, lng: 10.5},
-            gestureHandling: 'cooperative'
-
-          });
-          var kursorte =[
-              ['Berlin', 52.5065133 , 13.1445662],
-              ['Jena', 50.9224921 , 11.515935],
-              ['Stadthagen' , 52.3048833 , 9.1377608],
-              ['Düsseldorf', 51.2384339 , 6.7443114],
-              ['Emmelshausen', 50.1591603 , 7.5202903],
-              ['Wiesbaden', 50.0723983 , 8.1082738],
-              ['Bad Orb', 50.2097421 , 9.2911858],
-              ['Würzburg', 49.778052 , 9.8729898],
-              ['Rosenheim', 47.8480716 , 12.0684963],
-              ['Regensburg', 49.0215596 , 12.0403022]
-          ];
-          var image = {
-                url: 'LogoVDZPT2.png',
-                // This marker is 20 pixels wide by 32 pixels high.
-            };
-
-          for (var i = 0; i < kursorte.length; i++) {
-                var kursort = kursorte[i];
-                var marker = new google.maps.Marker({
-                position: {lat: kursort[1], lng: kursort[2]},
-                map: map,
-                icon: image,
-                title: kursort[0]
-                });
-            }
-
-
-        }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6irwYsco4rHY_UdRSNzAQjPSfMt8lSOY&callback=initMap">
-      </script>
-  </body>
-</html>
++<!DOCTYPE html>
++<html>
++  <head>
++    <style>
++      #map {
++        width: 400px;
++        height: 400px;
++        background-color: grey;
++      }
++    </style>
++  </head>
++  <body>
++    <div id="map"></div>
++    <script>
++        function initMap() {
++          var home = {lat: 51.219367, lng: 6.810514};
++          var map = new google.maps.Map(document.getElementById('map'), {
++            zoom: 5.9,
++            center: {lat: 50.4, lng: 10.5},
++            gestureHandling: 'cooperative'
++
++          });
++          var kursorte =[
++              ['Berlin', 52.5065133 , 13.1445662],
++              ['Jena', 50.9224921 , 11.515935],
++              ['Stadthagen' , 52.3048833 , 9.1377608],
++              ['Düsseldorf', 51.2384339 , 6.7443114],
++              ['Emmelshausen', 50.1591603 , 7.5202903],
++              ['Wiesbaden', 50.0723983 , 8.1082738],
++              ['Bad Orb', 50.2097421 , 9.2911858],
++              ['Würzburg', 49.778052 , 9.8729898],
++              ['Rosenheim', 47.8480716 , 12.0684963],
++              ['Regensburg', 49.0215596 , 12.0403022]
++          ];
++          var image = {
++                url: 'LogoVDZPT2.png',
++                // This marker is 20 pixels wide by 32 pixels high.
++            };
++
++          for (var i = 0; i < kursorte.length; i++) {
++                var kursort = kursorte[i];
++                var marker = new google.maps.Marker({
++                position: {lat: kursort[1], lng: kursort[2]},
++                map: map,
++                icon: image,
++                title: kursort[0]
++                });
++            }
++
++
++        }
++      </script>
++      <script async defer
++      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6irwYsco4rHY_UdRSNzAQjPSfMt8lSOY&callback=initMap">
++      </script>
++  </body>
++</html
